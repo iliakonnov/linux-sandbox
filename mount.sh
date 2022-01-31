@@ -7,7 +7,7 @@ if mountpoint -q ./root; then
 fi
 
 if [ -z "$1" ]; then
-	sudo mount ./fs.img ./root -o "subvol=$1"
+	sudo mount ./fs.img ./root
 else
 	sudo mount ./fs.img ./root -o "subvol=$1"
 fi
